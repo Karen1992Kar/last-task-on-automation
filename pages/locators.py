@@ -18,5 +18,10 @@ class BasketPageLocators():
 
 class CheckNameLocators():
     PRODUCT_NAME_1 = (By.TAG_NAME, "h1")
-    PRODUCT_NAME_2 = (By.CSS_SELECTOR,'#messages .alert:first-child strong')
+    PRODUCT_NAME_2 = (By.CSS_SELECTOR, '#messages .alert:first-child strong')
+
+
+class ProductPageLocators():
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div.alert > div > strong")
+
 
