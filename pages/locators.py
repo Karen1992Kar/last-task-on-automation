@@ -3,17 +3,13 @@ from selenium import webdriver
 browser = webdriver.Chrome()
 
 
-class MainPageLocators:
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-
-
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
 
 class BasketPageLocators:
-    BASKET_CLICK = (By.CSS_SELECTOR, '#add_to_basket_form')
+    BASKET_CLICK = (By.CSS_SELECTOR, '#default > header > div.page_inner > div > div.basket-mini.pull-right.hidden-xs > span')
 
 
 class CheckNameLocators:
@@ -27,5 +23,12 @@ class ProductPageLocators:
 
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+
+class BasketItems:
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+
+
+class ContentInner:
+    CONTENT_INNER = (By.CSS_SELECTOR, '#default > div.container-fluid.page > div > div.content')
 
