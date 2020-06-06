@@ -11,11 +11,9 @@ class ProductPage(MainPage):
         name_2 = self.browser.find_element(*CheckNameLocators.PRODUCT_NAME_2).text
         assert name_1 == name_2, "anunner@ havasar chen"
 
-    @pytest.mark.xfail
     def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is presented, but should not be"
 
-    @pytest.mark.xfail
     def should_be_disappeared(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "element is not disappeared"
