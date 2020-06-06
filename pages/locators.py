@@ -8,8 +8,20 @@ class LoginPageLocators:
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
 
+class BasePageLocators:
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
+
+class RegisterForm:
+    EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    PASSWORD1 = (By.CSS_SELECTOR, "#id_registration-password1")
+    PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTRATION_SUBMIT = (By.CSS_SELECTOR, "#register_form > button")
+
+
 class BasketPageLocators:
-    BASKET_CLICK = (By.CSS_SELECTOR, '#default > header > div.page_inner > div > div.basket-mini.pull-right.hidden-xs > span')
+    BASKET_CLICK = (By.CSS_SELECTOR, '#add_to_basket_form > button')
 
 
 class CheckNameLocators:
@@ -18,11 +30,7 @@ class CheckNameLocators:
 
 
 class ProductPageLocators:
-    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div.alert > div > strong")
-
-
-class BasePageLocators:
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
 
 
 class BasketItems:
