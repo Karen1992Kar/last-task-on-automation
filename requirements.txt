@@ -29,7 +29,7 @@ Tubes==0.2.0
 Twisted==20.3.0
 txrequest==0.1.0
 typing==3.7.4.1
-urllib3==1.25.9
+urllib3==1.26.5
 wcwidth==0.1.9
 zipp==3.1.0
 zope.interface==5.1.0
